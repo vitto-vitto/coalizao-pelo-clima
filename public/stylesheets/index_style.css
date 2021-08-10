@@ -1,3 +1,52 @@
-h1 {
-    color: greenyellow;
+
+:root {
+    --font-color: #ffff
 }
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#logo h1::before{
+    content: "+"
+}
+
+header {
+    display: flex;
+    background-color: #000;
+    color: var(--font-color);
+    width: auto;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    color: #1DA327;
+    min-height: calc(100vh-80px);
+}
+
+#header__items {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header__items a {
+    text-decoration: none;
+    color:var(--font-color);
+}
+
+
+header img {
+   width: 25vw;
+   height: 100%;
+   overflow: hidden;
+   margin-bottom: -2vh ;
+}
+

@@ -28,12 +28,13 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-// app.get('/', (req, res)=>{
-//     res.send('<h1>Server running on port 3000 - Client-side msg</h1>')
-// })
-
 app.get('/', (req, res)=>{
-    res.sendFile('views/index.html' , { root : __dirname})
+    res.send('<h1>Server running on port 3000 - Client-side msg</h1>')
 })
+
+
+// app.get('/', (req, res)=>{
+//     res.sendFile('views/index.html' , { root : __dirname})
+// })
 
 app.listen(3000,()=> console.log('Server running on port 3000 - Terminal msg')) /**app.listen() recieves as parameters the port and a callback that excecutes when it creates the server */
