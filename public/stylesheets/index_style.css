@@ -1,87 +1,52 @@
+
+:root {
+    --font-color: #ffff
+}
+
+
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-html, 
-body {
-   margin: 0;
-   padding: 0;
-   overflow-x: hidden;
-   width: 100%;
+#logo h1::before{
+    content: "+"
+}
+
+header {
+    display: flex;
+    background-color: #000;
+    color: var(--font-color);
+    width: auto;
+    height: 80px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+main {
+    background-color: white;
+    color: #1DA327;
+    min-height: calc(100vh-80px);
+}
+
+#header__items {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#header__items a {
+    text-decoration: none;
+    color:var(--font-color);
+}
+
+
+header img {
+   width: 25vw;
    height: 100%;
-}
-
-@media(max-width:767px){
-   body{
-       background-color: #ff0000;
-   }
-
-   nav {
-       position: fixed;
-       left: 0;
-       right: 0;
-       top: 0;
-       height: 50px;
-       background-color: #ffff;
-   }
-
-   ul {
-       list-style: none;
-       padding: 0;
-       margin: 0;
-       position: fixed;
-       top: 40px;
-       left: 0;
-       bottom: 0;
-       width: 80%;
-       background-color: #ffff;
-   }
-   
-   li {
-       display: block;
-       padding: 10px 20px;
-       border-top: 1px solid #0000;
-       position: relative;
-   }
-
-   nav > a {
-       position: absolute;
-       padding: 20px;
-       left: 10px;
-       top: 5px;
-       z-index: 2;
-   }
-
-   nav > a > span {
-       position: absolute;
-       left: 0;
-       right: 0;
-       background-color: #0000;
-       height: 3px;
-       margin-top: -1px;
-       width: 100%;
-   }
-
-   nav > a > span::before, nav > a > span::after{
-       content: " ";
-       position: absolute;
-       width: 100%;
-       height: 100%;
-       background-color: inherit;
-       left: 0;
-       right: 0;
-   }
-
-   nav > a > span::before{
-       top: -7px;
-   }
-
-   nav > a > span::after{
-       top: 7px ;
-   }
+   overflow: hidden;
+   margin-bottom: -2vh ;
 }
 
