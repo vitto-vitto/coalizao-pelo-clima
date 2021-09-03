@@ -50,3 +50,34 @@ header img {
    margin-bottom: -2vh ;
 }
 
+#section_5 {
+   flex-direction: row;
+   display:flex; 
+   flex-wrap: wrap;
+   background-color: green;
+   justify-content:space-evenly;
+}
+
+#section_5 div {
+    width:40%;
+    padding:30px;
+    
+}
+
+#section_5 h2 {
+    color: black;
+    padding: 5px;
+}
+
+#section_5 h3 {
+    color:white
+}
+
+#section_5_forms form input {
+    padding:10px;
+    border:2px solid green;
+    width: auto;
+    height: 10%;
+    border-radius:15px;
+    background-color: whitesmoke;
+}
